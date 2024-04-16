@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Page</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<nav>
+<ul>
+    <h1>Camerons Portfolio</h1>
+    <li>
+        <%= link_to 'about', about_path, class: 'btn btn-outline-primary' %>
+    </li>
+    <li>
+        <%= link_to 'home', home_path, class: 'btn btn-outline-primary' %>
+    </li>
+    <li>
+        <%= link_to 'contact', contact_path, class: 'btn btn-outline-primary' %>
+    </li>
+</ul>
+</nav>
+    <h1>My Work:</h1>
+    <%= image_tag 'AR4-02.jpg', alt: 'A simple To-Do List created within Ruby-On-Rails Architecture' %>
+    <p> A simple To-Do List created within Ruby-On-Rails Architecture.</p>
+    <%= image_tag 'pt5-06.jpg', alt: 'A nested routed Track create page, with album associations of each track' %>
+    <p>A nested routed Track create page, with album associations of each track. </p>
+<footer>
+    <h2>Camerons Portfolio 2024</h2>
+</footer>
+</body>
+</html>
